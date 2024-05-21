@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diy Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main_frame">
+    <div class="cal_display">
+        <div class="cal_display_text">
+            <label id="answer_display">0</label>
+        </div>
+    </div>
+    <div class="input_pannel">
+        <button class="cal_button" id="btn_1" onclick="collect_first(1) , collect_second(1)">
+            <label class="cal_btn_txt">1</label>
+        </button>
+        <button class="cal_button" id="btn_2" onclick="collect_first(2) , collect_second(2)">
+            <label class="cal_btn_txt">2</label>
+        </button>
+        <button class="cal_button" id="btn_3" onclick="collect_first(3) , collect_second(3)">
+            <label class="cal_btn_txt">3</label>
+        </button>
+        <button class="function_button" id="multiply_btn" onclick="operator_input('X')">
+            <label class="cal_btn_txt" id="multiply_btn_txt">X</label>
+        </button>
+        <br>
+
+
+        <button class="cal_button" id="btn_4" onclick="collect_first(4) , collect_second(4)">
+            <label class="cal_btn_txt">4</label>
+        </button>
+        <button class="cal_button" id="btn_5" onclick="collect_first(5) , collect_second(5)">
+            <label class="cal_btn_txt">5</label>
+        </button>
+        <button class="cal_button" id="btn_6" onclick="collect_first(6) , collect_second(6)">
+            <label class="cal_btn_txt">6</label>
+        </button>
+        <button class="function_button" id="minus_btn" onclick="operator_input('-')">
+            <label class="cal_btn_txt" id="minus_btn_txt">-</label>
+        </button>
+        <br>
+
+
+        <button class="cal_button" id="btn_7" onclick="collect_first(7) , collect_second(7)">
+            <label class="cal_btn_txt">7</label>
+        </button>
+        <button class="cal_button" id="btn_8" onclick="collect_first(8) , collect_second(8)">
+            <label class="cal_btn_txt">8</label>
+        </button>
+        <button class="cal_button" id="btn_9" onclick="collect_first(9) , collect_second(9)">
+            <label class="cal_btn_txt">9</label>
+        </button>
+        <button class="function_button" id="add_btn" onclick="operator_input('+')">
+            <label class="cal_btn_txt" id="add_btn_txt">+</label>
+        </button>
+        <br>
+
+
+        <button class="function_button" id="divide_btn" onclick="operator_input('/')">
+            <label class="cal_btn_txt" id="divide_btn_txt">/</label>
+        </button>
+        <button class="cal_button" id="btn_0" onclick="collect_first(0) , collect_second(0)">
+            <label class="cal_btn_txt">0</label>
+        </button>
+        <button class="function_button" id="btn_dot" onclick="collect_first('.') , collect_second('.')">
+            <label class="cal_btn_txt">.</label>
+        </button>
+        <button class="function_button" id="calculate_btn" onclick="calculating_answer()">
+            <label class="cal_btn_txt">=</label>
+        </button>
+        <br>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
